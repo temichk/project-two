@@ -1,151 +1,198 @@
 body {
-    margin: 0;
-    height: 100%;
-    padding: 0;
-    padding: 0;
-    width: 320px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
-    font-family: "TT Lakes", "Arial", sans-serif;
-}
-
-
-.top-bar button img {
-    height: 40px;
-    width: 40px;
-    text-align: center;
+  margin: 0;
+  height: 100%;
+  padding: 0;
+  padding: 0;
+  width: 320px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+  font-family: "TT Lakes", "Arial", sans-serif;
 }
 
 .top-bar {
-    margin-top: 23px;
-    display: flex;
-
+  margin-top: 23px;
+  display: flex;
 }
 
-.top-bar button {
-    margin: 0;
-    margin-left: 24px;
-    padding: 0;
     width: 40px;
-    height: 40px;
-    border: none;
-    margin-top: auto;
-    margin-bottom: auto;
-    
+    text-align: center;
+.top-bar button {
+  margin: 0;
+  margin-left: 24px;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.top-bar button:hover {
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.close-button {
+  background: url("img/icons/close.png") no-repeat center;
+}
+
+.search-button {
+  background: url("img/icons/search.png") no-repeat center;
 }
 
 .logo {
-    margin-left: 16px;
+  margin-left: 16px;
+  width: 100px;
+  height: 51px;
+  background: url("img/icons/logo.png") no-repeat center;
 }
 
 .top-bar .search-button {
-    margin-right: 24px;
-    justify-self: end;
-    margin-left: 79px;
+  margin-right: 24px;
+  justify-self: end;
+  margin-left: 79px;
 }
 
 .main-menu {
-    margin-top: 50px;
-    list-style: none;
-    padding-left: 0;
-    overflow-y: auto;
+  margin-top: 50px;
+  list-style: none;
+  padding-left: 0;
 }
 
 .main-menu li button {
-    color: #1B1C21;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -0.2px;
+  color: #1b1c21;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
 
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 24px;
 }
 
 .main-menu button {
-    border: none;
+  border: none;
 }
 
 .main-menu button:hover {
-    opacity: 0.5;
+  background-image: url("img/icons/highlight.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  animation-name: hover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 
-.main-menu .active button {
-    color: #7E7E82;
-    background-image: url("img/icons/highlight.png");
-    background-position: left;
-    background-repeat: no-repeat;
-}   
-
 .bottom-menu {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    margin-left: 24px; 
-    bottom: 0;
-    margin-bottom: 24px;
-
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  bottom: 0;
+  margin-bottom: 24px;
 }
 
 .bottom-icons {
-    display: flex;
-    width: 40px;
-    height: 40px;
+  display: flex;
+}
+
+.phone-button {
+  background: url("img/icons/call.png") no-repeat;
+}
+
+.chat-button {
+  background: url("img/icons/chat.png") no-repeat;
+}
+
+.profile-button {
+  background: url("img/icons/profile.png") no-repeat;
 }
 
 .bottom-icons button {
-    border: none;
-    padding: 0;
-    padding-right: 16px;
+  border: none;
+  padding: 0;
+  margin-right: 16px;
+  width: 40px;
+  height: 40px;
 }
 
-.email, .phone, .languages {
-    margin-top: 16px;
+.bottom-icons button:hover {
+  animation-name: scale;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.email,
+.phone,
+.languages {
+  margin-top: 16px;
 }
 
 .email .email-text {
-    color: #1B1C21;
-    font-family: "TT Lakes";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -0.2px;
+  color: #1b1c21;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
 }
 
 .phone .phone-text {
-    color: #1B1C21;
-    font-family: TT Lakes;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32px; /* 133.333% */
-    letter-spacing: -0.6px;
+  color: #1b1c21;
+  font-family: TT Lakes;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: -0.6px;
 }
 
 .languages {
-    color: #1B1C21;
-    font-family: TT Lakes;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px; /* 150% */
-    letter-spacing: -0.2px;
+  color: #1b1c21;
+  font-family: TT Lakes;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.2px;
 }
 
 .languages button {
-    border: none;
+  border: none;
 }
 
 .languages button:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
-.languages .current {
-    color: #7E7E82;
+.email a,
+.phone a {
+  text-decoration: none;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes hover {
+  100% {
+    text-indent: 5px;
+    color: #7e7e82;
+  }
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1.1);
+  }
 }

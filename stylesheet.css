@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    height: 100%;
+    padding: 0;
+    padding: 0;
+    width: 320px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    font-family: "TT Lakes", "Arial", sans-serif;
+}
+
+
+.top-bar button img {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+}
+
+.top-bar {
+    margin-top: 23px;
+    display: flex;
+
+}
+
+.top-bar button {
+    margin: 0;
+    margin-left: 24px;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+.logo {
+    margin-left: 16px;
+}
+
+.top-bar .search-button {
+    margin-right: 24px;
+    justify-self: end;
+    margin-left: 79px;
+}
+
+.main-menu {
+    margin-top: 50px;
+    list-style: none;
+    padding-left: 0;
+    overflow-y: auto;
+}
+
+.main-menu li button {
+    color: #1B1C21;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+}
+
+.main-menu button {
+    border: none;
+}
+
+.main-menu button:hover {
+    opacity: 0.5;
+}
+
+.main-menu .active button {
+    color: #7E7E82;
+    background-image: url("img/icons/highlight.png");
+    background-position: left;
+    background-repeat: no-repeat;
+}   
+
+.bottom-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px; 
+    bottom: 0;
+    margin-bottom: 24px;
+
+}
+
+.bottom-icons {
+    display: flex;
+    width: 40px;
+    height: 40px;
+}
+
+.bottom-icons button {
+    border: none;
+    padding: 0;
+    padding-right: 16px;
+}
+
+.email, .phone, .languages {
+    margin-top: 16px;
+}
+
+.email .email-text {
+    color: #1B1C21;
+    font-family: "TT Lakes";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+.phone .phone-text {
+    color: #1B1C21;
+    font-family: TT Lakes;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: -0.6px;
+}
+
+.languages {
+    color: #1B1C21;
+    font-family: TT Lakes;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+}
+
+.languages button {
+    border: none;
+}
+
+.languages button:hover {
+    opacity: 0.5;
+}
+
+.languages .current {
+    color: #7E7E82;
+}

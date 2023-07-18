@@ -1,4 +1,6 @@
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   height: 100%;
   padding: 0;
@@ -11,6 +13,7 @@ body {
   box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
     -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
   font-family: "TT Lakes", "Arial", sans-serif;
+  overflow: auto;
 }
 
 .top-bar {
@@ -60,6 +63,7 @@ body {
   margin-top: 50px;
   list-style: none;
   padding-left: 0;
+  overflow-y: auto;
 }
 
 .main-menu li button {
@@ -90,11 +94,10 @@ body {
 }
 
 .bottom-menu {
-  position: absolute;
   display: flex;
   flex-direction: column;
   margin-left: 24px;
-  bottom: 0;
+  margin-top: auto;
   margin-bottom: 24px;
 }
 
